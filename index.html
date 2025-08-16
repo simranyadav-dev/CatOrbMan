@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CatOrb Man</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-orange">
+    <header class="header">
+        <h1>🐱 Cat Orb Man</h1>
+        <div class="theme-controls">
+            <div class="theme-dropdown">
+                <button class="dropdown-btn" onclick="toggleThemeDropdown()">Themes ▼</button>
+                <div class="dropdown-content" id="themeDropdown">
+                    <div class="dropdown-item" onclick="changeTheme('orange')">🧡 Orange</div>
+                    <div class="dropdown-item" onclick="changeTheme('blue')">💙 Blue</div>
+                    <div class="dropdown-item" onclick="changeTheme('purple')">💜 Purple</div>
+                    <div class="dropdown-item" onclick="changeTheme('green')">💚 Green</div>
+                    <div class="dropdown-item" onclick="changeTheme('pink')">💗 Pink</div>
+                    <div class="dropdown-item" onclick="changeTheme('teal')">💎 Teal</div>
+                </div>
+            </div>
+            <button class="mode-toggle" onclick="toggleDarkMode()">🌙 Dark</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcomeScreen" class="welcome-screen">
+            <h2>Welcome to Cat Pac-Man!</h2>
+            <div class="cat-emoji">🐱</div>
+            <p style="font-size: 1.2rem; margin: 2rem 0;">Experience the classic Pac-Man game with an adorable feline twist!</p>
+            <button class="btn" onclick="showInstructions()">📖 How to Play</button>
+            <button class="btn" onclick="startGame()">🎮 Start Game</button>
+        </div>
+
+        <!-- Instructions Screen -->
+        <div id="instructionsScreen" class="instructions-screen hidden">
+            <h2 style="color: var(--accent-color); margin-bottom: 2rem;">How to Play</h2>
+            
+            <canvas class="demo-video" id="demoCanvas" width="500" height="300"></canvas>
+            
+            <div class="instructions">
+                <h3>Game Controls:</h3>
+                <ul>
+                    <li>🎮 Use Arrow Keys or WASD to move your cat</li>
+                    <li>🟡 Collect all the dots to advance to the next level</li>
+                    <li>⚡ Power pellets make ghosts vulnerable for a short time</li>
+                    <li>👻 Avoid ghosts or you'll lose a life</li>
+                    <li>🏆 Score points by eating dots and ghosts</li>
+                </ul>
+                
+                <h3>Scoring:</h3>
+                <ul>
+                    <li>🔸 Small dot: 10 points</li>
+                    <li>🔶 Power pellet: 50 points</li>
+                    <li>👻 Ghost (when vulnerable): 200 points</li>
+                </ul>
+            </div>
+            
+            <button class="btn" onclick="showWelcome()">← Back to Menu</button>
+            <button class="btn" onclick="startGame()">🎮 Start Game</button>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="gameScreen" class="game-screen hidden">
+            <div class="level-indicator" id="levelIndicator">Level: 1</div>
+            <div class="game-info">
+                <div>Score: <span id="score">0</span></div>
+                <div>Lives: <span id="lives">3</span></div>
+                <div>Level: <span id="currentLevel">1</span></div>
+            </div>
+            <canvas id="gameCanvas" class="game-canvas" width="540" height="420"></canvas>
+            <button class="btn" onclick="showWelcome()">← Back to Menu</button>
+        </div>
+    </div>
+
+    <!-- Game Over Popup -->
+    <div id="gameOverPopup" class="game-over-popup hidden">
+        <h2>💀 Game Over! 💀</h2>
+        <p style="font-size: 1.5rem; margin: 1rem 0;">Your cat has been caught!</p>
+        <p style="font-size: 1.2rem; margin: 1rem 0;">Final Score: <span id="finalScore">0</span></p>
+        <button class="btn" onclick="restartGame()">🔄 Play Again</button>
+        <button class="btn" onclick="showWelcome()">← Main Menu</button>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 CAT ORB MAN. Made with ❤️ by <a href="">SIMRAN YADAV</a> All rights reserved.</p>
+    </footer>
+
+      
+    <script src="script.js"></script>
+</body>
+</html>
