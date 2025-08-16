@@ -1,6 +1,6 @@
 # CatOrbMan
 
-
+Inspired from Pac-Man game. 
 
 ## Live demo 
 
