@@ -16,8 +16,7 @@ This repository is meant to showcase my development style, code quality, and pro
 ---
 ##  🌐Demo Link
 
-###  [🎮 Play CatOrb Man](https://cat-orb-man.vercel.app/)
-
+###  🎮 CatOrb Man 🎮
 [![Play CatOrb Man](https://img.shields.io/badge/Play-Now-brightblue?style=for-the-badge)](https://cat-orb-man.vercel.app/)
 ## 📂 Features Highlight
 ✔️ Interactive game mechanics  
@@ -37,4 +36,29 @@ It may not be **copied, used, or redistributed** without explicit written permis
 
 ## 📜 License
 **Restricted License – Demo Use Only**
+
+Copyright © 2025 Simran Yadav .
+All rights reserved.
+
+This code is provided solely for demonstration of my freelance and development work.
+You may view and clone the repository for learning/reference purposes,
+but you are not allowed to copy, modify, distribute, or use this project in personal, academic, or commercial works without written permission from the author.
+
+For usage or collaboration requests, contact:
+📧 simranyadav.dev@gmail.com
+
+---
+## 🤝 Work With Me
+Looking for a developer who can create **unique and engaging applications or games**?  
+I specialize in:  
+- 🎮 Creative web games & interactive apps  
+- 🌐 Full Stack Development (MERN / PHP / Node.js)  
+- 🤖 AI-powered applications  
+
+📩 **Let’s collaborate:** [LinkedIn](https://linkedin.com/in/simran-yadav-dev)
+
+✒️ **Read Blogs:** [Blog](https://hashnode.com/@cymrynverse)
+
+
+---
 
