@@ -18,6 +18,8 @@ This repository is meant to showcase my development style, code quality, and pro
 
 ###  🎮 CatOrb Man 🎮
 [![Play CatOrb Man](https://img.shields.io/badge/Play-Now-brightblue?style=for-the-badge)](https://cat-orb-man.vercel.app/)
+
+---
 ## 📂 Features Highlight
 ✔️ Interactive game mechanics  
 ✔️ Smooth animations  
